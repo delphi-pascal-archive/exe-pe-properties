@@ -1,0 +1,269 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 373, 316
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Basic EXE/PE properties - (c) 2002 by -=Assarbad=- [v1.02]"
+FONT 8, "Arial"
+BEGIN
+    PUSHBUTTON      "&Set checksum",IDC_BUTTON_SETCHECKSUM,94,285,56,14,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "&OK",IDCANCEL,168,285,56,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Open &file",IDC_BUTTON_OPENFILE,242,285,56,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Save &Report",IDC_BUTTON_SAVEREPORT,316,285,56,14,0,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT_MACTYPE,77,23,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MACTYPE_CT,157,23,215,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_NUMSEC,77,37,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TIMESTAMP,221,37,151,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PTSYMTAB,77,51,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_NUMSYM,221,51,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SIZEOFOH,77,65,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CHARACT,77,79,65,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_CHARACT,157,79,215,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO_LOADERFLAGS,243,202,129,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO_DLLCHARACT,243,223,129,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SUBSYSTEM,243,258,129,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_STATUS,1,301,371,14,BS_FLAT | NOT 
+                    WS_TABSTOP
+    LTEXT           "",IDC_STATIC_OSVERSION,267,134,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PE Type",IDC_STATIC,46,1,27,8
+    RADIOBUTTON     "PE32",IDC_RADIO_PE32,77,1,30,8,BS_FLAT | WS_GROUP
+    RADIOBUTTON     "PE32+",IDC_RADIO_PE32_PLUS,109,1,33,8,BS_FLAT
+    RADIOBUTTON     "non-PE, but DOS EXE signature",IDC_RADIO_NONPE,143,1,
+                    113,8,BS_FLAT
+    RADIOBUTTON     "non-EXE?",IDC_RADIO_NONEXE,256,1,45,8,BS_FLAT
+    RADIOBUTTON     "Unknown",IDC_RADIO_PE_UNKNOWN,301,1,49,8,BS_FLAT | 
+                    WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,11,371,1
+    RTEXT           "IMAGE_FILE_HEADER",IDC_STATIC,278,13,94,8,WS_DISABLED | 
+                    NOT WS_GROUP
+    RTEXT           "Machine",IDC_STATIC,1,25,74,8,SS_NOPREFIX | SS_NOTIFY | 
+                    NOT WS_GROUP
+    LTEXT           ">>",IDC_STATIC,145,25,9,8,WS_DISABLED | NOT WS_GROUP
+    RTEXT           "NumberOfSections",IDC_STATIC,1,39,74,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "TimeDateStamp",IDC_STATIC,157,39,62,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "PointerToSymbolTable",IDC_STATIC,1,53,74,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "NumberOfSymbols",IDC_STATIC,157,53,62,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfOptionalHeader",IDC_STATIC,3,67,72,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "Characteristics",IDC_STATIC,25,81,50,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           ">>",IDC_STATIC,145,81,9,8,WS_DISABLED | NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,94,371,1
+    RTEXT           "Magic",IDC_STATIC,1,106,76,8,SS_NOPREFIX | SS_NOTIFY | 
+                    NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_MAGICWORD,81,106,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_IMAGEVERSION,267,106,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "ImageVersion",IDC_STATIC,181,106,81,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "LinkerVersion",IDC_STATIC,1,120,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_LINKERVERSION,81,120,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SUBSYSVERSION,267,120,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SubsystemVersion",IDC_STATIC,181,120,81,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfCode",IDC_STATIC,1,134,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFCODE,81,134,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_RESERVED,81,274,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Reserved1",IDC_STATIC,1,274,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfInitializedData",IDC_STATIC,1,148,76,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFINITEDDATA,81,148,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFIMAGE,267,148,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfImage",IDC_STATIC,181,148,81,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfUninitializedData",IDC_STATIC,1,162,76,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFUNINITEDDATA,81,162,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFHEADERS,267,162,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfHeaders",IDC_STATIC,181,162,81,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "BaseOfCode",IDC_STATIC,1,176,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_BASEOFCODE,81,176,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_CHECKSUM,267,176,104,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "CheckSum",IDC_STATIC,181,176,81,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "BaseOfData",IDC_STATIC,1,190,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_BASEOFDATA,81,190,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "Subsystem",IDC_STATIC,181,246,57,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "ImageBase",IDC_STATIC,1,204,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_IMAGEBASE,81,204,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "DllCharacteristics",IDC_STATIC,182,225,57,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SectionAlignment",IDC_STATIC,1,218,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SECTALIGN_HEX,81,218,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFSTACK_RESERVED,81,243,96,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFSTACK_COMMIT,81,250,96,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfStack*",IDC_STATIC,1,246,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "FileAlignment",IDC_STATIC,1,232,76,8,SS_NOPREFIX | 
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_FILEALIGN_DEC,81,232,96,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFHEAP_RESERVED,81,257,96,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SIZEOFHEAP_COMMIT,81,264,96,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "SizeOfHeap*",IDC_STATIC,1,260,76,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "OperatingSystemVersion",IDC_STATIC,181,134,81,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    RTEXT           "LoaderFlags",IDC_STATIC,182,204,57,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,283,371,1
+    LTEXT           "Calc. value:",IDC_STATIC_CALCCHECKSUM_,1,288,38,8
+    LTEXT           "",IDC_STATIC_CALCCHECKSUM,39,288,52,8
+    RTEXT           "IMAGE_OPTIONAL_HEADER",IDC_STATIC,278,96,94,8,
+                    WS_DISABLED | NOT WS_GROUP
+    LTEXT           "(0 = none)",IDC_STATIC,291,53,34,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "Click below to see the constants defined for the value:",
+                    IDC_STATIC,157,70,176,8,SS_NOPREFIX | SS_NOTIFY | NOT
+                    WS_GROUP
+    RTEXT           "AddressOfEntryPoint",IDC_STATIC,181,190,81,8,
+                    SS_NOPREFIX | SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_ADDRESSOFENTRY,267,190,104,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_SUBSYSTEM,243,246,129,8,SS_NOPREFIX |
+                    SS_NOTIFY | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_FILENAME,1,13,264,8
+END
+
+1                       ICON    DISCARDABLE     "Assarbad.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 372
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 315
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
